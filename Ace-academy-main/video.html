@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail Page</title>
+</head>
+<body>
+    <!-- Thumbnail or play button -->
+    <div id="video-thumbnail" style="cursor: pointer; width: 200px; height: 150px; background-color: #ccc; text-align: center; line-height: 150px;">
+        Click to play video
+    </div>
+    
+    <!-- Container to embed the video player -->
+    <div id="video-container"></div>
+
+    <script>
+        document.getElementById('video-thumbnail').addEventListener('click', function() {
+            var videoId = 'YOUR_VIDEO_ID'; // Replace with the actual YouTube video ID
+            var videoContainer = document.getElementById('video-container');
+            
+            // Clear any existing content
+            videoContainer.innerHTML = '';
+            
+            // Create the iframe element
+            var iframe = document.createElement('iframe');
+            iframe.width = '560';
+            iframe.height = '315';
+            iframe.src = 'https://www.youtube.com/embed/' + videoId;
+            iframe.frameBorder = '0';
+            iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+            iframe.allowFullscreen = true;
+            
+            // Append the iframe to the video container
+            videoContainer.appendChild(iframe);
+        });
+    </script>
+</body>
+</html>

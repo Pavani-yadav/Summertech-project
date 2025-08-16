@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page - Orphans Heaven</title>
+    <link rel="stylesheet" href="productpage.css">
+    <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <h2><i class="fas fa-heart"></i> Orphans Heaven</h2>
+                </div>
+                <ul>
+                    <li><a href="homepage.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="productpage.html"><i class="fas fa-tshirt"></i> Products</a></li>
+                    <li><a href="Aboutuspage.html"><i class="fas fa-info-circle"></i> About us</a></li>
+                    <li><a href="cartpage.html"><i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="products-container" id="productsContainer">
+            <!-- Products will be dynamically loaded here -->
+        </div>
+    </main>
+
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProductModal()">&times;</span>
+            <div class="modal-product">
+                <img id="modalImage" src="" alt="Product Image" class="modal-product-image">
+                <div class="modal-product-details">
+                    <h1 id="modalTitle"></h1>
+                    <p id="modalDescription"></p>
+                    <div class="rating" id="modalRating"></div>
+                    <div class="quantity-section">
+                        <label for="modalQuantity">Quantity:</label>
+                        <input type="number" id="modalQuantity" value="1" min="1">
+                    </div>
+                    <div class="modal-buttons">
+                        <button class="add-to-cart-btn" onclick="addToCartFromModal()">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                        <button class="donate-btn" onclick="donateFromModal()">
+                            <i class="fas fa-hand-holding-heart"></i> Donate
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="productpage.js"></script>
+</body>
+</html>

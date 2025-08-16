@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Example</title>
+<script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="cartstyling.css.css">
+</head>
+<body>
+ <header class="header">
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="productpage.html">product</a></li> 
+                 <li><a href="Aboutuspage.html">About us</a></li>
+                 <li><a href="Aboutuspage.html">Contact us</a></li>
+            </ul>
+        </nav>
+        </div>
+         <div class="logo">
+            <img src="https://p1.hiclipart.com/preview/469/940/964/shopping-cart-shopping-bag-online-shopping-retail-shopping-centre-grocery-store-logo-png-clipart.jpg" alt="Logo">
+        </div>
+        <div class="cart-container">
+            <div class="cart-icon">
+                <h2>Items: <span id="cart-count">0</span></h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkSfFSeIjRHNpfHdeGNtpzlh1XVI9xGOedsg&s" alt="Cart Icon">  
+            </div>
+            <div class="cart-dropdown" id="cart-dropdown">
+                <div id="cart-items">Your cart is empty</div>
+                <div class="cart-footer">
+                     
+                    <h2 id="cart-total"></h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div id="root"></div>
+        <div class="sidebar">
+            <div class="head"><p>My Cart</p></div>
+            <div id="cart-item">Your cart is empty</div>
+            <div class="foot">
+                <h3>Total</h3>
+     </div>
+
+           <a href="Donation.html"><button onclick="openDonationModal()">Donate</button></a>
+
+            <!-- Order History Section -->
+            <div class="order-history">
+                <h1>Donation history</h1>
+                <div id="order-history-items">
+                    <!-- Orders will be dynamically populated here -->
+                </div>
+            </div>
+
+            <!-- Tracking History Section -->
+            <div class="tracking-history">
+                <h1>Tracking the history </h1>
+                <div id="tracking-history-items">
+                    <!-- Tracking information will be dynamically populated here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div id="payment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closedonationModal()">&times;</span>
+            <h2>Confirm Payment</h2>
+            <p>Please select a payment method and confirm your payment.</p>
+            <div class="payment-options-modal">
+                <label><input type="radio" name="payment-modal" value="credit-card"> Credit Card</label><br>
+                <label><input type="radio" name="payment-modal" value="paypal"> PayPal</label><br>
+                <label><input type="radio" name="payment-modal" value="bank-transfer"> Bank Transfer</label>
+            </div>
+            <button onclick="confirmPayment()">Confirm Payment</button>
+        </div>
+    </div>
+   <div id="donation-success-modal"class="modal">
+    <div class="modal content">
+        <span class="close-button"onclick="close  donation successmodal()"></span>
+        <button onclick="closedonationmodal()">Donate</button>
+    </div>
+   </div>
+
+    
+    <script src="cartjs.js"></script>
+</body>
+</html>

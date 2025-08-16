@@ -1,0 +1,21 @@
+body{
+    background-color:blue;
+    background-size:cover;
+}
+.inbox-button
+{
+    display: inline-block;
+    padding:10px;
+    background-color:red;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+}
+.inbox-button:hover
+{
+    background-color:purple;
+}
+
+
+
+

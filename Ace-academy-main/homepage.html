@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orphans Heaven - Donate Clothes</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-heart"></i> Orphans Heaven</h1>
+            <nav>
+                <ul>
+                    <li><a href="homepage.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="productpage.html"><i class="fas fa-tshirt"></i> Products</a></li>
+                    <li><a href="Aboutuspage.html"><i class="fas fa-info-circle"></i> About us</a></li>
+                    <li><a href="cartpage.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to Orphans Heaven!</h2>
+            <p><b>Give your clothes a second life - Donate to orphans and make a difference</b></p>
+            <div class="hero-buttons">
+                <a href="productpage.html" class="btn donate-btn">
+                    <i class="fas fa-hand-holding-heart"></i> Donate Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Camera Upload Section -->
+    <section class="upload-section">
+        <div class="container">
+            <h2><i class="fas fa-camera"></i> Upload Your Clothes to Donate</h2>
+            <div class="upload-container">
+                <div class="upload-box" id="uploadBox">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p>Click to upload or drag and drop your clothes images</p>
+                    <input type="file" id="fileInput" accept="image/*" multiple>
+                </div>
+                <div class="uploaded-images" id="uploadedImages"></div>
+                <button class="btn upload-btn" onclick="submitDonation()">
+                    <i class="fas fa-paper-plane"></i> Submit for Donation
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <div class="container">
+            <h2><i class="fas fa-star"></i> Featured Donations</h2>
+            <div class="product-grid">
+                <div class="product-item" onclick="viewProductDetails(0)">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnTvo6xNxvNh8ZARdTL5fRn30Z1RHwlFEfRg&s" alt="Product 1">
+                    <h3>Children's Clothing Set</h3>
+                    <p><b>Perfect for kids aged 5-10 years</b></p>
+                    <a href="#" class="btn view-btn" onclick="viewProductDetails(0)">
+                        <i class="fas fa-eye"></i> View Details
+                    </a>
+                </div>
+                
+                <div class="product-item" onclick="viewProductDetails(1)">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2ezQDYHyw4UvOZed5VurbiwMdUnOAykf6bA&s" alt="Product 2">
+                    <h3>Girls' Dress Collection</h3>
+                    <p><b>Beautiful dresses for special occasions</b></p>
+                    <a href="#" class="btn view-btn" onclick="viewProductDetails(1)">
+                        <i class="fas fa-eye"></i> View Details
+                    </a>
+                </div>
+                
+                <div class="product-item" onclick="viewProductDetails(2)">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfw-kSfdNPS1olUA86w8uQGPLNvlZmu_Ar6Q&s" alt="Product 3">
+                    <h3>Casual Wear</h3>
+                    <p><b>Comfortable daily wear for children</b></p>
+                    <a href="#" class="btn view-btn" onclick="viewProductDetails(2)">
+                        <i class="fas fa-eye"></i> View Details
+                    </a>
+                </div>
+                
+                <div class="product-item" onclick="viewProductDetails(3)">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiEFoWPMRIFMsStTzzYwsnyT9X3_Fq4tXgxg&s" alt="Product 4">
+                    <h3>Winter Collection</h3>
+                    <p><b>Warm clothes for cold weather</b></p>
+                    <a href="#" class="btn view-btn" onclick="viewProductDetails(3)">
+                        <i class="fas fa-eye"></i> View Details
+                    </a>
+                </div>
+                
+                <div class="product-item" onclick="viewProductDetails(4)">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJMWlbDQYgxCo2A1vosXX0fkCSzLogRsqO1p2ZuqYcmA5c0pCR6_BrdCoKuoFKfzt1UOE&usqp=CAU" alt="Product 5">
+                    <h3>School Uniforms</h3>
+                    <p><b>Educational support through clothing</b></p>
+                    <a href="#" class="btn view-btn" onclick="viewProductDetails(4)">
+                        <i class="fas fa-eye"></i> View Details
+                    </a>
+                </div>
+                
+                <div class="product-item" onclick="viewProductDetails(5)">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1rI9c4VGF9pPibS6DBOg4xe9pId8JDxupiA&s" alt="Product 6">
+                    <h3>Sports Wear</h3>
+                    <p><b>Active wear for healthy lifestyle</b></p>
+                    <a href="#" class="btn view-btn" onclick="viewProductDetails(5)">
+                        <i class="fas fa-eye"></i> View Details
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Orphans Heaven. Spreading love through donations. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="homepage.js"></script>
+</body>
+</html>

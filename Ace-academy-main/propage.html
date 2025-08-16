@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Orphans Heaven - Welcome</title>
+        <link rel="stylesheet" href="propage.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="top-logo">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="navbar">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html"><i class="fas fa-info-circle"></i> Welcome</a></li>
+                            <li><a href="homepage.html"><i class="fas fa-home"></i> Home</a></li>
+                            <li><a href="productpage.html"><i class="fas fa-tshirt"></i> Products</a></li>
+                            <li><a href="Aboutuspage.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                            <li><a href="cartpage.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="quote-section">
+                    <p class="main-quote">"Every child deserves love, care, and a chance to shine"</p>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <div class="hero-content">
+                            <h1 class="main-title">Orphans Heaven</h1>
+                            <h2 class="subtitle">The world needs more kindness and orphans need more love</h2>
+                            <div class="description">
+                                <p>This platform is completely dedicated to orphans and their welfare.</p>
+                                <p>Orphans are children who lack parental support and face financial difficulties.</p>
+                                <p>Orphans Heaven collects clothing donations from generous people and delivers them to NGO organizations.</p>
+                                <p>Our aim is to serve orphans and make a positive impact in their lives.</p>
+                                <p>People willing to donate their clothes can easily do so through our website.</p>
+                            </div>
+                            <div class="cta-sectno ion">
+                                <a href="homepage.html" class="btn primary-btn">
+                                    <i class="fas fa-hand-holding-heart"></i>
+                                    Start Donating
+                                </a>
+                                <a href="Aboutuspage.html" class="btn secondary-btn">
+                                    <i class="fas fa-info-circle"></i>
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="hero-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfnni5PDru1sylf4lWAChx8Utqn57LKe2uBg&s" alt="Orphans Heaven">
+                            <div class="image-overlay">
+                                <div class="stats">
+                                    <div class="stat-item">
+                                        <i class="fas fa-heart"></i>
+                                        <span class="stat-number">1000+</span>
+                                        <span class="stat-label">Children Helped</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <i class="fas fa-tshirt"></i>
+                                        <span class="stat-number">5000+</span>
+                                        <span class="stat-label">Clothes Donated</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="video-section">
+            <div class="container">
+                <h2 class="section-title">See Our Impact in Action</h2>
+                <div class="video-container">
+                    <img src="WhatsApp Image 2024-08-31 at 23.02.30_7f3210ac.jpg" alt="Video Poster">
+                    <div class="play-button" onclick="playVideo()">
+                        <img src="https://img.icons8.com/ios/50/000000/play.png" alt="Play">
+                    </div>
+                    <iframe id="videoIframe" src="https://www.youtube.com/embed/LlNMw3hQcF4?si=HHQY6Ofn9qPdtjO8" 
+                            title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <h2 class="section-title">Why Choose Orphans Heaven?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Trusted Platform</h3>
+                        <p>Verified NGOs and transparent donation process</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h3>Easy Delivery</h3>
+                        <p>Hassle-free pickup and delivery to orphanages</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Track Impact</h3>
+                        <p>See how your donations make a difference</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </body>
+    <script>
+        function playVideo() {
+            document.querySelector('.video-container img').style.display = 'none';
+            document.querySelector('.play-button').style.display = 'none';
+            document.getElementById('videoIframe').style.display = 'block';
+        }
+    </script>
+</html>
