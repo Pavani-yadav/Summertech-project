@@ -1,4 +1,4 @@
-# Title
+1.title
 # Orphan Heaven
 
 2. Project Description
@@ -37,7 +37,7 @@ cd orphan-heaven
 4. Acknowledgments
 ## 🙏 Acknowledgments
 This project was developed under *Ace Academy Summer Tech Program*.  
-Special thanks to our mentors and team members who guided and supported us throughout this journey.
+Special thanks to our mentors  who guided and supported us throughout this journey.
 
 
 project link:http://pavaniyadavbandi.netlify.app
